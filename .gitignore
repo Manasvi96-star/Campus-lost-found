@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+campus-lost-found-backend/node_modules/
+campus-lost-found-frontend/node_modules/
+
+# Environment files
+.env
+campus-lost-found-backend/.env
+campus-lost-found-frontend/.env
+
+# Uploads
+uploads/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
