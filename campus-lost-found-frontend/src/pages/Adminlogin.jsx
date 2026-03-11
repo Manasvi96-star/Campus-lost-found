@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./AdminLogin.css";
+import "./Adminlogin.css";
 
 export default function AdminLogin() {
   const [credentials, setCredentials] = useState({
@@ -19,13 +19,16 @@ export default function AdminLogin() {
     try {
       console.log("Attempting login with:", credentials.username);
 
-      const response = await fetch("http://localhost:5000/api/admin/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://campus-lost-found-1gu7.onrender.com/api/admin/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(credentials),
         },
-        body: JSON.stringify(credentials),
-      });
+      );
 
       console.log("Response status:", response.status);
       const data = await response.json();
