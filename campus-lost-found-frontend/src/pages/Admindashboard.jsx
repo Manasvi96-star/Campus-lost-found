@@ -27,8 +27,8 @@ export default function AdminDashboard() {
   const fetchData = async () => {
     try {
       const [itemsRes, statsRes] = await Promise.all([
-        fetch("http://localhost:5000/api/items"),
-        fetch("http://localhost:5000/api/stats"),
+        fetch("https://campus-lost-found-1gu7.onrender.com/api/items"),
+        fetch("https:// /campus-lost-found-1gu7.onrender.com/api/stats"),
       ]);
 
       const itemsData = await itemsRes.json();
