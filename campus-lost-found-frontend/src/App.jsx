@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Lost from "./pages/Lost";
 import Found from "./pages/Found";
 import ViewItems from "./pages/Viewitems";
-import AdminLogin from "./pages/Adminlogin";
+import AdminLogin from "./pages/Adminlogin.jsx";
 import AdminDashboard from "./pages/Admindashboard";
 import ItemDetails from "./pages/itemdetails";
 import MatchingItems from "./pages/MatchingItems";
