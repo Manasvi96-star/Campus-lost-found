@@ -59,7 +59,7 @@ export default function AdminDashboard() {
     if (!confirm("Are you sure you want to delete this item?")) return;
 
     try {
-      await fetch(`http://localhost:5000/api/items/${id}`, {
+      await fetch(`https://campus-lost-found-1gu7.onrender.com`, {
         method: "DELETE",
       });
       fetchData();
@@ -70,7 +70,7 @@ export default function AdminDashboard() {
 
   const handleStatusUpdate = async (id, status) => {
     try {
-      await fetch(`http://localhost:5000/api/items/${id}/status`, {
+      await fetch("https://campus-lost-found-1gu7.onrender.com", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
